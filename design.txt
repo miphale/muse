@@ -1,4 +1,7 @@
-Interstellar Transport System is implemented by having three main 'components'
+Interstellar Transport System 
+The project is spring-boot and can be started by running maven command: "spring-boot:run" After starting it up on your web browser navigate to localhost:8080
+
+Implemented by having three main 'components'
 
 The database layer
 The service implementation
