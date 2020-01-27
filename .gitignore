@@ -1,0 +1,49 @@
+.metadata/
+interstellar-transport-system.zip
+interstellar-transport-system/logs/
+
+# Directories #
+build/
+bin/
+dest/
+cached/
+target/
+app/
+temp/
+dist/
+.recommenders/
+ 
+# OS Files #
+.DS_Store
+ 
+*.class
+ 
+# Package Files #
+*.war
+*.ear
+*.db
+ 
+######################
+# Windows
+######################
+ 
+# Windows image file caches
+Thumbs.db 
+ 
+# Folder config file
+Desktop.ini
+ 
+######################
+# OSX
+######################
+ 
+.DS_Store
+.svn
+ 
+# Thumbnails
+._*
+ 
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+ 

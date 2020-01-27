@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head lang="en">
+	    <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <title>Interstellar Transport System</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container my-5">
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"><a class="nav-link" href="#" th:href="@{/shortestpath}">Shortest Path</a></li>
+				      	<li class="nav-item active"><a class="nav-link" href="#" th:href="@{/planets}">Planets</a></li>
+				      	<li class="nav-item"><a class="nav-link" href="#" th:href="@{/routes}">Routes</a></li>
+				      	<li class="nav-item"><a class="nav-link" href="#" th:href="@{/traffics}">Traffics</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+			<h2 class="mb-5">Planet Details</h2>
+			<div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="planetNode" class="col-form-label">Node:</label>
+                                <p class="form-control-static" th:text="${planet.planetNode}" id="planetNode">Node</p>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="planetName" class="col-form-label">Name:</label>
+                                <p class="form-control-static" th:text="${planet.planetName}" id="planetName">Name</p>
+                            </div>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>
